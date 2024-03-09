@@ -1,0 +1,9 @@
+# Configuration file for Weeping Angels plugin
+messages:
+  warning: "&6Beware of the Weeping Angels!"
+  goodbye: "&cGoodbye, don't blink!"
+
+settings:
+  angelSpawnChance: 2.5
+  maxAngelsPerPlayer: 3
+  teleportDistance: 10
