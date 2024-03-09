@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.moon.minecraft</groupId>
-    <artifactId>my-plugin</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>spigot-plugin</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>My Plugin</name>
+    <name>Spigot Plugin</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.18-R0.1-SNAPSHOT</version>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -39,7 +39,6 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>**/*.yml</include>
-                    <!-- Add other resource types here -->
                 </includes>
             </resource>
         </resources>
@@ -67,7 +66,7 @@
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.moon.minecraft.MainClass</mainClass>
+                                    <mainClass>com.example.MainClass</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -78,17 +77,17 @@
     </build>
 
     <organization>
-        <name>Moon Minecraft</name>
-        <url>https://www.moonminecraft.com</url>
+        <name>Example Organization</name>
+        <url>https://www.example.com</url>
     </organization>
 
     <developers>
         <developer>
-            <id>moon</id>
-            <name>Moon</name>
-            <email>moon@moonminecraft.com</email>
-            <organization>Moon Minecraft</organization>
-            <organizationUrl>https://www.moonminecraft.com</organizationUrl>
+            <id>example</id>
+            <name>Example Developer</name>
+            <email>developer@example.com</email>
+            <organization>Example Organization</organization>
+            <organizationUrl>https://www.example.com</organizationUrl>
         </developer>
     </developers>
 </project>
