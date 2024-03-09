@@ -1,1 +1,6 @@
-
+name: WeepingAngels
+main: com.moon.minecraft.WeepingAngelsMain
+version: 1.0
+description: Adds Weeping Angels to Minecraft
+author: YourNameHere
+api-version: 1.18
